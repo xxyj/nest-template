@@ -1,2 +1,3 @@
 ./documentation/
 *.log
+./node_modules/
