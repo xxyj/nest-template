@@ -1,0 +1,1602 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bff documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bff documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>MainService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/modules/main/main.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#log">log</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_filterTypeData">_filterTypeData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#_getAllModuleData">_getAllModuleData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#_multiRequest">_multiRequest</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#_singleRequest">_singleRequest</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMainBanners">getMainBanners</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMainModules">getMainModules</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryGameDetail">queryGameDetail</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryGaming">queryGaming</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryInstantActivity">queryInstantActivity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryMiniGame">queryMiniGame</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryModule">queryModule</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryNewest">queryNewest</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#queryRank">queryRank</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(redis: Redis, dubboProvide: <a href="../interfaces/provideInterface.html">provideInterface</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/modules/main/main.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>redis</td>
+                                                  
+                                                        <td>
+                                                                    <code>Redis</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dubboProvide</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/provideInterface.html" target="_self" >provideInterface</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_filterTypeData"></a>
+                    <span class="name">
+                        <b>
+                            _filterTypeData
+                        </b>
+                        <a href="#_filterTypeData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>_filterTypeData(data: any[], type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/modules/main/main.service.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getAllModuleData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            _getAllModuleData
+                        </b>
+                        <a href="#_getAllModuleData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getAllModuleData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/modules/main/main.service.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>获取到所有的模块数据以及广告数据</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/RedisBackDTO.html" target="_self" >Promise&lt;RedisBackDTO&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_multiRequest"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            _multiRequest
+                        </b>
+                        <a href="#_multiRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_multiRequest(params: <a href="../interfaces/requestParamsDTO.html">requestParamsDTO[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/modules/main/main.service.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>一般多个dubbo同时查询  先走redis，再走dubbo</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                                <code><a href="../interfaces/requestParamsDTO.html" target="_self" >requestParamsDTO[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/CallBackDTO.html" target="_self" >Promise&lt;CallBackDTO&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_singleRequest"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            _singleRequest
+                        </b>
+                        <a href="#_singleRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_singleRequest(fn: Promise<any>, cache: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/modules/main/main.service.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>单个查询通用函数</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                            <code>Promise&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cache</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/CallBackDTO.html" target="_self" >Promise&lt;CallBackDTO&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMainBanners"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            getMainBanners
+                        </b>
+                        <a href="#getMainBanners"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMainBanners(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="211"
+                            class="link-to-prism">src/modules/main/main.service.ts:211</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>获取首页banner模块 </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMainModules"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            getMainModules
+                        </b>
+                        <a href="#getMainModules"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMainModules(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">src/modules/main/main.service.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>获取首页模块 </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryGameDetail"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryGameDetail
+                        </b>
+                        <a href="#queryGameDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryGameDetail(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="245"
+                            class="link-to-prism">src/modules/main/main.service.ts:245</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>查询游戏详情 ，</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryGaming"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryGaming
+                        </b>
+                        <a href="#queryGaming"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryGaming()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="284"
+                            class="link-to-prism">src/modules/main/main.service.ts:284</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>电竞tab查询
+63 推荐小广告  64 小游戏  65 电竞</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryInstantActivity"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryInstantActivity
+                        </b>
+                        <a href="#queryInstantActivity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryInstantActivity(start: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, end: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="270"
+                            class="link-to-prism">src/modules/main/main.service.ts:270</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>分页获取即时活动,活动一定只会有1个吗</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>start</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>end</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryMiniGame"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryMiniGame
+                        </b>
+                        <a href="#queryMiniGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryMiniGame()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="293"
+                            class="link-to-prism">src/modules/main/main.service.ts:293</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>电竞tab查询
+63 推荐小广告  64 小游戏  65 电竞</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryModule"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryModule
+                        </b>
+                        <a href="#queryModule"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryModule(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, group: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="224"
+                            class="link-to-prism">src/modules/main/main.service.ts:224</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>查询模块信息 </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>group</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryNewest"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryNewest
+                        </b>
+                        <a href="#queryNewest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryNewest(start: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, end: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">src/modules/main/main.service.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>查询资讯信息 </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>start</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>end</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryRank"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            queryRank
+                        </b>
+                        <a href="#queryRank"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>queryRank(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/modules/main/main.service.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>查询游戏排名 </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="log"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            log</b>
+                            <a href="#log"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/Logger.html" target="_self" >Logger</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/modules/main/main.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ModuleType, ModuleGroup, AdSubType } from &#x27;@/enums&#x27;
+import {
+  CallBackDTO,
+  requestParamsDTO,
+  RedisBackDTO,
+  ModuleDTO,
+  CmsDTO,
+} from &#x27;./main.interface&#x27;
+import { Injectable, Inject, forwardRef } from &#x27;@nestjs/common&#x27;
+import { REDIS_CLIENT, Redis } from &#x27;@/common/redis&#x27;
+import { DUBBO_CLIENT, provideInterface } from &#x27;@/common/dubbo&#x27;
+import { Logger } from &#x27;@/interceptors/logger/logger.base&#x27;
+
+@Injectable()
+export class MainService {
+  private readonly log: Logger
+  constructor(
+    @Inject(forwardRef(() &#x3D;&gt; REDIS_CLIENT))
+    private readonly redis: Redis,
+    @Inject(forwardRef(() &#x3D;&gt; DUBBO_CLIENT))
+    private readonly dubboProvide: provideInterface,
+  ) {
+    this.log &#x3D; new Logger()
+  }
+
+  _filterTypeData(data: any[], type: string) {
+    if (type &amp;&amp; type !&#x3D;&#x3D; &#x27;ALL&#x27;) {
+      // 过滤类型
+      data &#x3D; data.filter(item &#x3D;&gt; {
+        if (item.gameList) {
+          return item.gameList.filter(i &#x3D;&gt; {
+            return i.appTerminalType &#x3D;&#x3D;&#x3D; &#x27;ALL&#x27; || i.appTerminalType &#x3D;&#x3D;&#x3D; type
+          }).length
+        } else {
+          return item.appTerminalType &#x3D;&#x3D;&#x3D; &#x27;ALL&#x27; || item.appTerminalType &#x3D;&#x3D;&#x3D; type
+        }
+      })
+    }
+    return data
+  }
+
+  /**
+   * 获取到所有的模块数据以及广告数据
+   */
+  async _getAllModuleData(): Promise&lt;RedisBackDTO&gt; {
+    const requestArr &#x3D; [],
+      callBack: RedisBackDTO &#x3D; { modules: null, ad: {} }
+    let moduleRes &#x3D; JSON.parse(await this.redis.get(&#x27;MODULE&#x27;))
+    let adRes &#x3D; JSON.parse(await this.redis.get(&#x27;AD&#x27;))
+    if (!moduleRes) {
+      const r &#x3D; Object.values(ModuleGroup).map(item &#x3D;&gt; {
+        return Promise.resolve(
+          this.dubboProvide.service.queryModuleListByGroup(item),
+        )
+      })
+      r.length &amp;&amp; requestArr.push(r)
+    }
+    // 后面得用
+    const len &#x3D; requestArr.length
+    let adArr &#x3D; []
+    if (!adRes) {
+      adArr &#x3D; Object.values(AdSubType).filter(
+        value &#x3D;&gt; isNaN(Number(value)) &#x3D;&#x3D;&#x3D; false,
+      )
+      const r &#x3D; adArr.map(item &#x3D;&gt; {
+        return Promise.resolve(
+          this.dubboProvide.adService.queryAppCmsNew(80, +item),
+        )
+      })
+      r.length &amp;&amp; requestArr.push(r)
+    }
+
+    if (requestArr.length) {
+      // 查询出所有的数据,并且保存到分组中
+      const result &#x3D; await Promise.all(
+        requestArr.map(promiseItem &#x3D;&gt; {
+          // 错误抓出来
+          return promiseItem.catch(err &#x3D;&gt; {
+            return err
+          })
+        }),
+      )
+      const MR &#x3D; result.slice(0, len)
+      // 只有全部数据都请求成功才放入redis
+      MR.reduce((b: boolean, item) &#x3D;&gt; {
+        if (item.status &#x3D;&#x3D;&#x3D; 200) {
+          callBack.modules.push(item.result)
+        } else {
+          this.log.error(&#x60;模块dubbo接口调用失败：${item.message}&#x60;)
+        }
+        return b &amp;&amp; item.status &#x3D;&#x3D;&#x3D; 200
+      }, true) &amp;&amp; this.redis.set(&#x27;MODULE&#x27;, JSON.stringify(MR))
+
+      const AR &#x3D; result.slice(len)
+      AR.reduce((b: boolean, item, index) &#x3D;&gt; {
+        if (item.status &#x3D;&#x3D;&#x3D; 200) {
+          callBack.ad[adArr[index]] &#x3D; item.result
+        } else {
+          this.log.error(&#x60;广告位dubbo接口调用失败：${item.message}&#x60;)
+        }
+        return b &amp;&amp; item.status &#x3D;&#x3D;&#x3D; 200
+      }, true) &amp;&amp; this.redis.set(&#x27;AD&#x27;, JSON.stringify(callBack.ad))
+    } else {
+      callBack.ad &#x3D; adRes||[]
+      callBack.modules &#x3D; moduleRes||[]
+    }
+    return callBack
+  }
+
+  /**
+   * 一般多个dubbo同时查询  先走redis，再走dubbo
+   * @param params
+   */
+  async _multiRequest(params: requestParamsDTO[]): Promise&lt;CallBackDTO&gt; {
+    let back: CallBackDTO &#x3D; {
+      code: 200,
+      message: &#x27;&#x27;,
+      result: {},
+    }
+    this._getAllModuleData()
+    params &#x3D; params.filter(async item &#x3D;&gt; {
+      let isCache &#x3D; await this.redis.get(item.cache)
+      isCache &#x3D; JSON.parse(isCache) || []
+      if (isCache) {
+        back.result[item.key] &#x3D; item.callBack
+          ? item.callBack(isCache, item.params)
+          : isCache
+      }
+      return !isCache
+    })
+
+    const dubbos &#x3D; params.map(item &#x3D;&gt; {
+      return item.dubbo
+    })
+
+    if (dubbos.length) {
+      const res &#x3D; await Promise.all(
+        dubbos.map(promiseItem &#x3D;&gt; {
+          // 错误抓出来
+          return promiseItem.catch(err &#x3D;&gt; {
+            return err
+          })
+        }),
+      )
+      if (!(res &amp;&amp; res.length &#x3D;&#x3D;&#x3D; params.length) &amp;&amp; !back.result) {
+        back.code &#x3D; 500
+        back.message &#x3D; &#x27;dubbo接口调用失败&#x27;
+      } else {
+        params.forEach((item, index) &#x3D;&gt; {
+          if (res[index].status &#x3D;&#x3D;&#x3D; 200) {
+            const list &#x3D; res[index].result || []
+            this.redis.set(item.cache, JSON.stringify(list))
+            back.result[item.key] &#x3D; item.callBack
+              ? item.callBack(list, item.params)
+              : res[index].result
+          } else {
+            back.message &#x3D; res[index].message
+            this.log.error(&#x60;${item.dubbo}调用失败：${res[index].message}&#x60;)
+          }
+        })
+      }
+    }
+    return back
+  }
+
+  /**
+   * 单个查询通用函数
+   * @param fn
+   * @param cache
+   * @param type
+   */
+  async _singleRequest(
+    fn: Promise&lt;any&gt;,
+    cache: string,
+    type?: string,
+  ): Promise&lt;CallBackDTO&gt; {
+    let res: CallBackDTO &#x3D; {
+      result: null,
+      code: 200,
+      message: &#x27;&#x27;,
+    }
+    let result &#x3D; await this.redis.get(cache)
+    if (result) {
+      res.result &#x3D; JSON.parse(result) || []
+    } else {
+      let r &#x3D; await fn
+      if (r.status &#x3D;&#x3D;&#x3D; 200) {
+        this.redis.set(cache, JSON.stringify(r.result))
+        res.result &#x3D; r.result
+      }
+      res.code &#x3D; r.status
+    }
+    type &amp;&amp; (res.result &#x3D; this._filterTypeData(res.result, type))
+    return res
+  }
+
+  /** 获取首页模块 */
+  async getMainModules(type: string): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    const modules &#x3D; this._filterTypeData(
+      result.modules.filter(item &#x3D;&gt; {
+        return item.moduleGroup &#x3D;&#x3D;&#x3D; ModuleGroup.INDEX_GAMES
+      }),
+      type,
+    )
+    const CmsDTO &#x3D; result.ad[AdSubType.APP_MAIN_RECOMMEND]
+    return { modules, CmsDTO }
+  }
+
+  /** 获取首页banner模块 */
+  async getMainBanners(type: string): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    const bannerModule &#x3D; this._filterTypeData(
+      result.modules.filter(item &#x3D;&gt; {
+        return item.moduleGroup &#x3D;&#x3D;&#x3D; ModuleGroup.INDEX_BANNER
+      }),
+      type,
+    )
+    const adRecommend &#x3D; result.ad[AdSubType.APP_MAIN_COPY_WRITING]
+    return { bannerModule, adRecommend }
+  }
+
+  /** 查询模块信息 */
+  async queryModule(id: string, group: string, type: string): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    const res &#x3D; this._filterTypeData(
+      result.modules.filter(item &#x3D;&gt; {
+        return item.moduleGroup &#x3D;&#x3D;&#x3D; group &amp;&amp; item.moduleId &#x3D;&#x3D;&#x3D; id
+      }),
+      type,
+    )
+    return res
+  }
+  /** 查询游戏排名 */
+  async queryRank(type: string): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    const res &#x3D; []
+    result.modules.forEach(item &#x3D;&gt; {
+      res.push(...this._filterTypeData(item.gameList, type))
+    })
+    return res
+  }
+
+  /** 查询游戏详情 ，*/
+  async queryGameDetail(id: string, type: string): Promise&lt;any&gt; {
+    // 详情页单独缓存吧，毕竟node不适合cpu密集型的
+    let gameDetail &#x3D; await this.redis.get(&#x60;GAME_DETAIL_${id}&#x60;)
+    if (gameDetail) {
+      gameDetail &#x3D; JSON.stringify(gameDetail)
+    } else {
+      const result &#x3D; await this._getAllModuleData()
+      const res &#x3D; result.modules.filter(item &#x3D;&gt; {
+        return item.gameList.filter(i&#x3D;&gt;{
+             return i.gameId &#x3D;&#x3D;&#x3D; id
+        })
+      })
+      if(res &amp;&amp; res.length){
+        this.redis.set()
+      }
+    }
+
+    // 礼包信息需要去积分查询
+  }
+
+  /**
+   *分页获取即时活动,活动一定只会有1个吗
+   * @param start
+   * @param end
+   */
+  async queryInstantActivity(start: number, end: number): Promise&lt;any&gt; {
+    let r &#x3D; await this.getMainModules(&#x27;ALL&#x27;)
+    r &#x3D; r
+      .filter(item &#x3D;&gt; {
+        return item.moduleType &#x3D;&#x3D;&#x3D; &#x27;ACTIVITY&#x27;
+      })
+      .slice(start, end)
+    return {}
+  }
+
+  /**
+   * 电竞tab查询
+   * 63 推荐小广告  64 小游戏  65 电竞
+   */
+  async queryGaming(): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    return result.ad[AdSubType.APP_TAB_MINI_GAM]
+  }
+
+  /**
+   * 电竞tab查询
+   * 63 推荐小广告  64 小游戏  65 电竞
+   */
+  async queryMiniGame(): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    return result.ad[AdSubType.APP_TAB_GAMING]
+  }
+
+  /** 查询资讯信息 */
+  async queryNewest(start: number, end: number): Promise&lt;any&gt; {
+    const result &#x3D; await this._getAllModuleData()
+    // 此处后端认为只会有1个
+    const res: ModuleDTO &#x3D; result.modules.filter(item &#x3D;&gt; {
+      return item.type &#x3D;&#x3D;&#x3D; ModuleType.INFORMATION
+    })[0]
+    const infoSize &#x3D; res ? res.infoList : []
+    return {
+      infoDtoList: infoSize.slice(start, end),
+      listSize: infoSize.length,
+      moduleId: res.moduleId,
+    }
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'MainService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

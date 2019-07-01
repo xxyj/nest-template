@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    // 解决vue不认的问题 import * as xx from 'xx'--> import xx from 'xx'
+    // https://github.com/Microsoft/TypeScript/pull/19675
+    "esModuleInterop": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    // "typeRoots": ["./src/types"],
+    // "files": ["./src/types/common.d.ts"],
+    "paths": {
+      "@": ["./src"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
