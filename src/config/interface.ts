@@ -3,7 +3,5 @@ export interface configInterface {
   zk: string
   env: string
   zkRoot: string
-  httpsKey: string
-  httpsCert: string
-  userSoPath: string
+  db: object
 }

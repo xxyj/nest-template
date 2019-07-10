@@ -7,8 +7,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
-    "start": "nodemon",
-    "start:debug": "nodemon --config nodemon-debug.json",
+    "start": "cross-env NODE_ENV=production && nodemon",
+    "start:debug": "cross-env NODE_ENV=production && nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && npm run build",
     "start:prod": "cross-env NODE_ENV=production && node dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json",
@@ -47,8 +47,6 @@
     "rxjs": "^6.3.3",
     "swagger-ui-express": "^4.0.2",
     "typeorm": "^0.2.18",
-    "vue": "^2.6.10",
-    "vue-server-renderer": "^2.6.10",
     "winston": "^3.2.1",
     "yargs": "^13.2.2"
   },

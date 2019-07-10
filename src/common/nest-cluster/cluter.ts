@@ -7,8 +7,6 @@ import { NestFactory } from '@nestjs/core'
 import { Logger } from '@/interceptors/logger/logger.base'
 import { HttpException, HttpStatus, INestApplication } from '@nestjs/common'
 import fs from 'fs'
-import { exec } from 'child_process'
-import { ErrorsInterceptor } from '@/interceptors/logger/logger.interceptor'
 export const isMaster = cluster.isMaster
 
 export const runCluster = async (
@@ -75,7 +73,8 @@ export const runCluster = async (
     globalFn && globalFn(app)
     const ports = port || 3333
     await app.listen(ports)
-    console.log(`open:http://localhost:${ports}`)
+    // console.log(`open:http://localhost:${ports}`)
+    console.log(`api doc:http://localhost:${ports}/swaggerApi/#`)
     // return app
   }
 }

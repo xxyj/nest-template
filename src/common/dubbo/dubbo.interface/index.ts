@@ -2,18 +2,15 @@ import { adInterface, adDependencies } from './ad.interface'
 import { mainInterface, mainDependencies } from './main.interface'
 import request from 'request'
 import { ucInterface, ucDependencies } from './uc.interface'
-import { activityInterface, activityDependencies } from './activity.interface'
 
 export interface provideInterface
   extends adInterface,
     mainInterface,
-    ucInterface,
-    activityInterface {}
+    ucInterface {}
 export const dependencies = {
   ...mainDependencies,
   ...adDependencies,
   ...ucDependencies,
-  ...activityDependencies,
 }
 
 /**

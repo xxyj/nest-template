@@ -3,25 +3,16 @@ import { Injectable, HttpException, Inject, forwardRef } from '@nestjs/common'
 import { config } from '@/config'
 import request from 'request'
 import { getBytes } from '@/tools/util'
-import { userDTO } from '../main/main.interface'
+import { userDto } from '@/interface/user'
 const isLocal = !config.env || config.env === 'local'
 
 @Injectable()
 export class UserService {
-  private so: userDTO
+  private so: userDto
   constructor(
     @Inject(forwardRef(() => REDIS_CLIENT))
     private readonly redis: Redis,
-  ) {
-    // this.redis = new Redis()
-    // if (!isLocal) {
-    //   const ffi = require('ffi')
-    //   this.so = ffi.Library(config.userSoPath, {
-    //     // 出参，入参，通过so验证用户
-    //     validate_cookie: ['void', ['array', 'int', 'int', 'bool']],
-    //   })
-    // }
-  }
+  ) {}
   async isUser(cookie: string): Promise<any> {
     return !!(await this.getUser(cookie))
   }

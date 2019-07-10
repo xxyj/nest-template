@@ -10,7 +10,7 @@ import testConfig from './test'
 import productionConfigYq from './production-yq'
 import productionConfigBj from './production-bj'
 import { configInterface } from './interface'
-import path from 'path'
+import { join } from 'path'
 const env = process.env.NODE_ENV
 
 let config: configInterface = {
@@ -18,9 +18,16 @@ let config: configInterface = {
   zk: '',
   env,
   zkRoot: '',
-  httpsKey: '',
-  httpsCert: '',
-  userSoPath: path.join(__dirname, './src/lib/libcom_netease_urs_ntescode.so'),
+  db: {
+    type: 'mysql',
+    host: '10.165.124.79',
+    port: 3506,
+    username: 'dev1',
+    password: 'Dev123456!',
+    database: 'test',
+    entities: [join(__dirname, '../modules/**/**.entity{.ts,.js}')],
+    synchronize: true,
+  },
 }
 switch (env) {
 case 'local':
