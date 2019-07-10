@@ -50,17 +50,4 @@ async function bootstrap(app) {
   // history 路由
   app.use(history())
 }
-if (!config.env || config.env === 'local') {
-  // const easyMonitor = require('easy-monitor')
-  // easyMonitor('Mercury')
-  runCluster(AppModule, 3333, bootstrap)
-} else {
-  runCluster(
-    AppModule,
-    3333,
-    bootstrap,
-    true,
-    config.httpsKey,
-    config.httpsCert,
-  )
-}
+runCluster(AppModule, 3333, bootstrap)
