@@ -10,12 +10,10 @@ export default {
     name: 'test6379',
     password: 'wyb_redis_test',
     db: 0,
-    keyPrefix: 'node-game-',
   },
   zk: 'zookeeper.dev.163.com:2181',
   zkRoot: 'dev',
   httpsKey: './src/lib/https/private.pem',
   httpsCert: './src/lib/https/ca.cer',
-  userSoPath: './src/lib/libcom_netease_urs_ntescode.so',
   
 }

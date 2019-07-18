@@ -11,7 +11,7 @@ export const isMaster = cluster.isMaster
 
 export const runCluster = async (
   AppModule: any,
-  port?: number,
+  port?: number | string,
   globalFn?: Function,
   https?: Boolean,
   keyPath?: string,
@@ -71,10 +71,10 @@ export const runCluster = async (
       app = await NestFactory.create(AppModule)
     }
     globalFn && globalFn(app)
-    const ports = port || 3333
-    await app.listen(ports)
-    // console.log(`open:http://localhost:${ports}`)
-    console.log(`api doc:http://localhost:${ports}/swaggerApi/#`)
+    port = +port
+    await app.listen(port)
+    // console.log(`open:http://localhost:${port}`)
+    console.log(`api doc:http://localhost:${port}/swaggerApi/#`)
     // return app
   }
 }

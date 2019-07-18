@@ -11,8 +11,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import { LoggingInterceptor } from './interceptors/logger/logger.interceptor'
 import { runCluster } from './common/nest-cluster/cluter'
 import { HttpExceptionFilter } from './filters/error.filters'
-import { config } from './config'
-
+const port = process.env.ENV_PORT || process.env.PORT || 3333
 async function bootstrap(app) {
   // 允许跨域
   app.enableCors()
@@ -50,4 +49,4 @@ async function bootstrap(app) {
   // history 路由
   app.use(history())
 }
-runCluster(AppModule, 3333, bootstrap)
+runCluster(AppModule, port, bootstrap)

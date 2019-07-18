@@ -11,7 +11,7 @@ import { AppService } from './app.service'
 import { Connection } from 'typeorm'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { DubboModule } from './common/dubbo/dubbo.module'
-import { LoggerMiddleware } from './middlewares/logger/logger.middleware'
+import { CommonMiddleware } from './middlewares/common/common.middleware'
 import { RedisModule } from './common/redis/redis.module'
 
 /** 业务模块 */
@@ -36,7 +36,7 @@ export class AppModule implements NestModule {
   constructor(private readonly connection: Connection) {}
   public configure(consumer: MiddlewareConsumer): void {
     consumer
-      .apply(LoggerMiddleware)
+      .apply(CommonMiddleware)
       .forRoutes({ path: '*', method: RequestMethod.ALL })
   }
 }

@@ -29,11 +29,7 @@ export class LoggingInterceptor implements NestInterceptor {
       break
     }
     const now = Date.now()
-    // 不用时间，因为看着太像了，不方便
-    const random = Math.random()
-      .toString(36)
-      .substring(2)
-    this.log.info(`request[${random}]:${str}`)
+    this.log.info(`request:${str}`)
     return next.handle().pipe(
       tap(res => {
         if (!res) {
@@ -41,7 +37,7 @@ export class LoggingInterceptor implements NestInterceptor {
         }
         let strRes = res.message || JSON.stringify(res)
         this.log.info(
-          `response[${random}]:use ${Date.now() - now}ms,res:${strRes}`,
+          `response:use ${Date.now() - now}ms,res:${strRes}`,
         )
         // 打印错误信息
         if (res.code && res.code !== 200) {

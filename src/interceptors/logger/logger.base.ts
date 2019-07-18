@@ -41,7 +41,8 @@ export class Logger implements LoggerService {
   }
 
   write(level: string, mss: string | object) {
-    let message = mss.toString()
+    // 每个请求都得带上requestid
+    let message = `[${global.requestId}]${mss.toString()}`
     if (isMaster) {
       this.logger[level](message)
     } else {

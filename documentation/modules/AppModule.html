@@ -329,7 +329,7 @@ import { MainModule } from &#x27;./modules/main/main.module&#x27;
 export class AppModule implements NestModule {
   public configure(consumer: MiddlewareConsumer): void {
     consumer
-      .apply(LoggerMiddleware)
+      .apply(CommonMiddleware)
       .forRoutes({ path: &#x27;*&#x27;, method: RequestMethod.ALL })
   }
 }

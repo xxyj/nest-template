@@ -28,6 +28,12 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## order
+
+```bash
+middleware->guard->interceptor before->pipe->module->interceptor after-filter
+```
+
 ## Installation
 
 ```bash

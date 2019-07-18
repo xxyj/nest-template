@@ -1,5 +1,6 @@
 declare module NodeJS {
   interface Global {
-    redis: {}
+    redis: any
+    requestId: any
   }
 }
